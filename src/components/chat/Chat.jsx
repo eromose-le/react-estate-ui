@@ -66,7 +66,9 @@ function Chat() {
               />
               John Doe
             </div>
-            <span className="close" onClick={()=>setChat(null)}>X</span>
+            <span className="close" onClick={() => setChat(null)}>
+              X
+            </span>
           </div>
           <div className="center">
             <div className="chatMessage">
@@ -114,6 +116,12 @@ function Chat() {
             <textarea></textarea>
             <button>Send</button>
           </div>
+        </div>
+      )}
+
+      {!chat && (
+        <div className="chatMinimized" onClick={() => setChat((prev) => !prev)}>
+          Chat
         </div>
       )}
     </div>

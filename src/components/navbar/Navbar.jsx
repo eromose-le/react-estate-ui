@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const user = true;
+  const user = false;
   return (
     <nav>
       <div className="left">
         <a href="/" className="logo">
           <img src="/logo.png" alt="" />
-          <span>LamaEstate</span>
+          <span>Estate</span>
         </a>
         <a href="/">Home</a>
         <a href="/">About</a>
@@ -32,12 +32,12 @@ function Navbar() {
             </Link>
           </div>
         ) : (
-          <>
+          <div className="user">
             <a href="/">Sign in</a>
             <a href="/" className="register">
               Sign up
             </a>
-          </>
+          </div>
         )}
         <div className="menuIcon">
           <img
