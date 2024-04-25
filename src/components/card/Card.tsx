@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import "./card.scss";
+import { Property } from "@/types/property";
 
-function Card({ item }) {
+function Card({ item }: { item: Property }) {
   return (
     <div className="card">
       <Link to={`/${item.id}`} className="imageContainer">

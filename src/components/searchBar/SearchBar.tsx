@@ -11,7 +11,7 @@ function SearchBar() {
     maxPrice: 0,
   });
 
-  const switchType = (val) => {
+  const switchType = (val: string) => {
     setQuery((prev) => ({ ...prev, type: val }));
   };
 

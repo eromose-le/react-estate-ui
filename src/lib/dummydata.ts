@@ -1,4 +1,6 @@
-export const listData = [
+import { Property } from "@/types/property";
+
+export const listData: Property[] = [
   {
     id: 1,
     title: "A Great Apartment Next to the Beach!",
